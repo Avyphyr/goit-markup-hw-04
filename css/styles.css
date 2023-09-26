@@ -4,6 +4,7 @@
   --IRIS: #4d5ae5;
   --SLATE: #434455;
   --CLOUD: #f4f4fd;
+  --LIGHT-SLATE: #8E8F99;
 }
 ul {
   list-style-type: none;
@@ -117,7 +118,8 @@ footer .logo-alt:focus {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(../images/people-office.jpg);
+    margin:0 auto;
 }
 .hero-title {
   color: var(--WHITE, #fff);
@@ -362,7 +364,7 @@ section {
 
 .position {
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /* section 4 */
@@ -381,7 +383,6 @@ section {
   row-gap: 48px;
 }
 .portfolio-item-flex {
-  margin-bottom: 8px;
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -401,7 +402,8 @@ section {
 
 .portfolio-text-flex {
   padding: 32px 16px;
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-top:none;
 }
 
 /*footer*/
@@ -442,6 +444,7 @@ section {
   justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
+  border: var(--LIGHT-SLATE) solid 1px;
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -545,4 +548,8 @@ section {
 
 .portfolio-item-flex:focus .portfolio-pop-up {
   transform: translateY(0%);
+}
+
+.address-item {
+  font-weight: 400;
 }
