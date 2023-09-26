@@ -449,8 +449,11 @@ section {
 .social {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
   list-style-type: none;
+}
+.social.social-footer {
+  gap: 16px;
 }
 
 .social-item {
